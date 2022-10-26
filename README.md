@@ -13,6 +13,6 @@ Test using `curl`:
 * Heartbeat: `curl http://localhost:8888/heartbeat?state=abc`
 * Command: `curl -H "Authorization: token abc123" http://localhost:8888/ -d 'command=foo&param[]=bar&param[]=baz'`
 
-## Caching the DIC
+## Caching the Dependency Injection Container (DIC)
 
 To cache the DIC automatic resolution, set the ``` 
