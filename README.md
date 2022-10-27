@@ -15,4 +15,10 @@ Test using `curl`:
 
 ## Caching the Dependency Injection Container (DIC)
 
-To cache the DIC automatic resolution, set the ``` 
+To cache the DIC automatic resolution, set the `DI_COMPILATION_PATH` environment variable to a valid directory. If this
+directory doesn't start with a `/`, then it will be considered relative to the root directory.
+
+e.g.
+
+    $ mkdir -p var/cache
+    $ DI_COMPILATION_PATH='var/cache' php -d html_errors=0 -S 0.0.0.0:8888 -t public/
